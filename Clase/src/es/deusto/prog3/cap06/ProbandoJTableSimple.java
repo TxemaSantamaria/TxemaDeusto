@@ -6,6 +6,7 @@ import java.awt.event.*;
 import java.util.ArrayList;
 
 import javax.swing.event.*;
+import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 
 
@@ -99,6 +100,11 @@ public class ProbandoJTableSimple {
 		modelo.addRow(new Object[] {"Oihan",250});
 		tabla.setModel(modelo);
 		
+		tabla.setDefaultRenderer(Object.class, new DefaultTableCellRenderer() {
+
+			
+			
+		});
 		//Evitar reordenación de columnas
 //		tabla.getTableHeader().setReorderingAllowed(false);
 //		
